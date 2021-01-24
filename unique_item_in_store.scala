@@ -4,7 +4,7 @@ From the below file print the unique item and store name:
 retailer.txt:
 
 Sears,shoe,ring,pan,shirt
-Walamrt,ring,pan,hat,meat
+Walmart,ring,pan,hat,meat
 Target,shoe,pan,shirt,hat
 
 */
@@ -21,5 +21,5 @@ scala> println("Store Name " + storeName)
 scala> println("Unique Item " + uniqueItem)
 
 Output:
-Store Name Walamrt
+Store Name Walmart
 UNIQUE ITEM meat
