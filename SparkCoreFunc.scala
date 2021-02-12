@@ -34,7 +34,7 @@ object SparkCoreFunc {
     top10.foreach(println)
     */
     
-   val youtubeRDD = izsc.textFile("hdfs://localhost:54310/user/hduser/youtube_videos.tsv", 2)
+   val youtubeRDD = izsc.textFile("hdfs://localhost:54310/user/hduser/youtube1.tsv", 2)
    val header = youtubeRDD.filter { x => x.contains("duration") }
    val withoutheader = youtubeRDD.subtract(header)
    val splityoutube = withoutheader.map(x=>x.split("\t"))
